@@ -1,11 +1,10 @@
-// BUG 2: Undefined Variable
+let taskCounter = 0;
 
 const taskInput = document.getElementById('taskInput');
 const addBtn = document.getElementById('addBtn');
 const taskList = document.getElementById('taskList');
 
 // Event listeners
-
 addBtn.addEventListener('click', addTask);
 taskInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
@@ -21,7 +20,7 @@ function addTask() {
         return;
     }
 
-    // BUG 2: reference 
+    // Fixed: taskCounter is now defined
     taskCounter++;
 
     const task = {

@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Tracker Pro</title>
 
-    <!-- BUG 3: Slow Resource Loading -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://httpstat.us/200?sleep=3000">
-
-    <link rel="stylesheet" href="styles.css?v=20260331">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <!-- BUG 1-->
         <header>
-            <img src="assets/logo.svg" alt="Task Tracker Logo" class="logo">
+            <img
+                src="https://via.placeholder.com/80"
+                width="80"
+                height="80"
+                alt="Task Tracker Logo"
+                class="logo"
+                decoding="async"
+            >
             <h1>Task Tracker Pro</h1>
             <p class="subtitle">Manage your tasks efficiently</p>
         </header>
@@ -31,7 +34,6 @@
                 <button id="addBtn" class="add-btn">Add Task</button>
             </div>
 
-            <!-- BUG 4: CSS Layout Issue -->
             <div class="task-list" id="taskList">
                 <p class="empty-message">No tasks yet. Add one to get started!</p>
             </div>
