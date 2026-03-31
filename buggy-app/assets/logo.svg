@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+  <defs>
+    <linearGradient id="g" x1="16" y1="12" x2="112" y2="116" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#60A5FA"/>
+      <stop offset="0.55" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#22C55E"/>
+    </linearGradient>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#020817" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <!-- rounded tile -->
+  <rect x="12" y="12" width="104" height="104" rx="26" fill="url(#g)" filter="url(#s)"/>
+
+  <!-- checkmark in a circle -->
+  <circle cx="64" cy="64" r="30" fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.55)" stroke-width="2"/>
+  <path d="M52 66.5L60.5 75L80 54.5" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- subtle lines to suggest "tasks" -->
+  <path d="M38 40H74" stroke="rgba(255,255,255,0.45)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M38 88H90" stroke="rgba(255,255,255,0.35)" stroke-width="3" stroke-linecap="round"/>
+</svg>
